@@ -1,14 +1,43 @@
-/* GAMEPAD VIEWER TEST SKIN */
+/* Yasumi Pink Xbox Gamepad Viewer Skin */
 
-body {
+.controller {
     background: transparent !important;
 }
 
-.gamepad {
-    filter: hue-rotate(290deg) saturate(2) !important;
+/* Controller body */
+.xbox {
+    background: linear-gradient(135deg, #ff69b4, #9b00ff) !important;
+    border-radius: 30px !important;
+    box-shadow: 0 0 30px #ff69b4 !important;
 }
 
-button,
-svg {
-    filter: hue-rotate(290deg) !important;
+/* Buttons */
+.xbox .button {
+    background: #ffb6e6 !important;
+    border-color: #ff69b4 !important;
+    box-shadow: 0 0 10px #ff69b4 !important;
+}
+
+/* Stick rings */
+.xbox .stick {
+    box-shadow: 0 0 15px #ff69b4 !important;
+}
+
+/* D-pad */
+.xbox .dpad {
+    filter: hue-rotate(290deg) saturate(2);
+}
+
+/* Glow animation */
+.xbox {
+    animation: yasumiGlow 2s infinite alternate;
+}
+
+@keyframes yasumiGlow {
+    from {
+        filter: drop-shadow(0 0 5px #ff69b4);
+    }
+    to {
+        filter: drop-shadow(0 0 25px #ff1493);
+    }
 }
