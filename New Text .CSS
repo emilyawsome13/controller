@@ -1,40 +1,4 @@
-/* Yasumi Xbox One Pink Theme */
-
-.controller.xbox {
-    filter: drop-shadow(0 0 15px #ff69d9);
-}
-
-/* Main Xbox controller shell */
-.controller.xbox .trigger,
-.controller.xbox .bumper,
-.controller.xbox .button,
-.controller.xbox .face,
-.controller.xbox .stick,
-.controller.xbox .dpad {
-    background-color: #ff69d9 !important;
-}
-
-/* Buttons */
-.controller.xbox .button {
-    border-color: #ffd6f5 !important;
-    box-shadow: 0 0 8px #ff69d9;
-}
-
-.controller.xbox .button.pressed {
-    background-color: white !important;
-}
-
-/* Analog sticks */
-.controller.xbox .stick {
-    background-color: #ff9de6 !important;
-}
-
-/* D-pad */
-.controller.xbox .dpad {
-    background-color: #ff4fcf !important;
-}
-
-/* Glow */
-.controller.xbox {
-    color: white !important;
+.controller {
+    transform: scale(1.2) !important;
+    filter: hue-rotate(300deg) !important;
 }
