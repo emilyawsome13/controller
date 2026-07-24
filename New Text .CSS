@@ -1,0 +1,140 @@
+/* Yasumi Sakura Neon */
+/* Xbox One Controller */
+
+:root{
+--pink:#ff63c8;
+--pink2:#ff9fe5;
+--purple:#7d4bff;
+--white:#ffffff;
+}
+
+/* Controller */
+
+.controller{
+filter:
+drop-shadow(0 0 8px #ff63c8)
+drop-shadow(0 0 18px #ff63c8)
+drop-shadow(0 0 35px #ff63c8);
+
+transition:.2s;
+}
+
+/* Body */
+
+.base{
+background:
+linear-gradient(
+180deg,
+rgba(255,150,220,.18),
+rgba(255,110,210,.12)
+);
+
+backdrop-filter:blur(8px);
+
+border-radius:35px;
+}
+
+/* Buttons */
+
+.button{
+transition:.12s;
+}
+
+.button.pressed{
+
+filter:
+brightness(1.4)
+drop-shadow(0 0 10px #ff6ed8)
+drop-shadow(0 0 20px #ff6ed8);
+
+transform:scale(1.08);
+}
+
+/* Triggers */
+
+.trigger{
+filter:
+drop-shadow(0 0 6px #ff7be3);
+}
+
+/* Analog */
+
+.stick{
+
+filter:
+drop-shadow(0 0 8px #ff7be3);
+
+transition:.08s;
+}
+
+/* Dpad */
+
+.dpad{
+filter:
+drop-shadow(0 0 8px #ff8be8);
+}
+
+/* ABXY */
+
+.button.a{
+background:#ff82da;
+}
+
+.button.b{
+background:#ff4fbf;
+}
+
+.button.x{
+background:#d88cff;
+}
+
+.button.y{
+background:#ffd7ef;
+}
+
+/* Start Back */
+
+.start,
+.back{
+
+background:#ff63c8;
+
+box-shadow:
+0 0 8px #ff63c8,
+0 0 20px #ff63c8;
+}
+
+/* Xbox Logo */
+
+.home{
+
+filter:
+drop-shadow(0 0 18px #ff63c8);
+
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+
+filter:
+drop-shadow(0 0 6px #ff63c8);
+
+}
+
+50%{
+
+filter:
+drop-shadow(0 0 20px #ff63c8);
+
+}
+
+100%{
+
+filter:
+drop-shadow(0 0 6px #ff63c8);
+
+}
+
+}
