@@ -1,3 +1,5 @@
 .controller {
-    filter: hue-rotate(300deg) !important;
+    opacity: 1 !important;
+    display: block !important;
+    visibility: visible !important;
 }
