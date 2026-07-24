@@ -1,25 +1,96 @@
-.edit.xbox {
-    filter: hue-rotate(180deg) saturate(1.4) brightness(1.1) !important;
+body {
+    background: linear-gradient(135deg, #0a0015 0%, #1a0030 30%, #0d0020 60%, #000 100%) !important;
 }
-.edit.xbox .stick {
-    filter: hue-rotate(60deg) saturate(2) brightness(1.2) !important;
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background:
+        radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.8), transparent),
+        radial-gradient(2px 2px at 40% 70%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 60% 20%, rgba(255,255,255,0.8), transparent),
+        radial-gradient(2px 2px at 80% 50%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 10% 80%, rgba(255,255,255,0.7), transparent),
+        radial-gradient(2px 2px at 90% 10%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 50% 90%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(2px 2px at 30% 50%, rgba(255,100,255,0.4), transparent),
+        radial-gradient(2px 2px at 70% 60%, rgba(100,255,255,0.4), transparent);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.edit.xbox {
+    filter:
+        brightness(1.05)
+        drop-shadow(0 0 20px rgba(255,0,255,0.3))
+        drop-shadow(0 0 40px rgba(0,255,255,0.2)) !important;
+}
+.edit.xbox.disconnected {
+    filter:
+        hue-rotate(300deg) saturate(0.3) brightness(0.5)
+        drop-shadow(0 0 15px rgba(255,0,100,0.4)) !important;
+}
+.edit.xbox .abxy {
+    filter:
+        brightness(1.2)
+        drop-shadow(0 0 8px rgba(0,255,255,0.4)) !important;
+}
+.edit.xbox .button {
+    filter: brightness(1.3) saturate(1.5) !important;
 }
 .edit.xbox .button.a {
-    filter: hue-rotate(0deg) saturate(3) brightness(1) !important;
+    filter: hue-rotate(320deg) saturate(2.5) brightness(1.2) !important;
 }
 .edit.xbox .button.b {
-    filter: hue-rotate(240deg) saturate(3) brightness(1) !important;
+    filter: hue-rotate(200deg) saturate(2.5) brightness(1.2) !important;
 }
 .edit.xbox .button.x {
-    filter: hue-rotate(280deg) saturate(3) brightness(1) !important;
+    filter: hue-rotate(280deg) saturate(2.5) brightness(1.2) !important;
 }
 .edit.xbox .button.y {
-    filter: hue-rotate(50deg) saturate(3) brightness(1) !important;
+    filter: hue-rotate(30deg) saturate(2.5) brightness(1.2) !important;
 }
-.edit.xbox .bumper,
 .edit.xbox .trigger {
-    filter: hue-rotate(130deg) saturate(2) brightness(1.1) !important;
+    filter: hue-rotate(280deg) saturate(1.8) brightness(1.15) !important;
+}
+.edit.xbox .trigger.pressed {
+    filter: hue-rotate(280deg) saturate(2) brightness(1.4)
+        drop-shadow(0 0 10px rgba(255,0,255,0.6)) !important;
+}
+.edit.xbox .bumper {
+    filter: hue-rotate(160deg) saturate(2) brightness(1.2) !important;
+}
+.edit.xbox .bumper.pressed {
+    filter: hue-rotate(160deg) saturate(2.5) brightness(1.5)
+        drop-shadow(0 0 8px rgba(0,255,255,0.6)) !important;
+}
+.edit.xbox .stick {
+    filter: hue-rotate(300deg) saturate(1.8) brightness(1.2) !important;
+}
+.edit.xbox .stick.pressed {
+    filter: hue-rotate(300deg) saturate(2.2) brightness(1.5) !important;
 }
 .edit.xbox .face {
-    filter: hue-rotate(200deg) saturate(2) brightness(1.2) !important;
+    filter: hue-rotate(340deg) saturate(1.8) brightness(1.2) !important;
+}
+.edit.xbox .face.pressed {
+    filter: hue-rotate(340deg) saturate(2.2) brightness(1.5) !important;
+}
+.edit.xbox .back,
+.edit.xbox .start {
+    filter: hue-rotate(180deg) saturate(1.5) brightness(1.1) !important;
+}
+.edit.xbox .back.pressed,
+.edit.xbox .start.pressed {
+    filter: hue-rotate(180deg) saturate(2) brightness(1.3) !important;
+}
+.edit.xbox .meta {
+    filter: hue-rotate(60deg) saturate(2) brightness(1.2) !important;
+}
+.edit.xbox .meta.pressed {
+    filter: hue-rotate(60deg) saturate(3) brightness(1.5)
+        drop-shadow(0 0 12px rgba(255,200,0,0.7)) !important;
+}
+.edit.xbox .quadrant {
+    filter: hue-rotate(200deg) saturate(2) brightness(1.3) !important;
 }
