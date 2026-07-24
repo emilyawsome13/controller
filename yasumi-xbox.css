@@ -1,3 +1,25 @@
-.edit {
-    filter: hue-rotate(300deg) !important;
+.edit.xbox {
+    filter: hue-rotate(180deg) saturate(1.4) brightness(1.1) !important;
+}
+.edit.xbox .stick {
+    filter: hue-rotate(60deg) saturate(2) brightness(1.2) !important;
+}
+.edit.xbox .button.a {
+    filter: hue-rotate(0deg) saturate(3) brightness(1) !important;
+}
+.edit.xbox .button.b {
+    filter: hue-rotate(240deg) saturate(3) brightness(1) !important;
+}
+.edit.xbox .button.x {
+    filter: hue-rotate(280deg) saturate(3) brightness(1) !important;
+}
+.edit.xbox .button.y {
+    filter: hue-rotate(50deg) saturate(3) brightness(1) !important;
+}
+.edit.xbox .bumper,
+.edit.xbox .trigger {
+    filter: hue-rotate(130deg) saturate(2) brightness(1.1) !important;
+}
+.edit.xbox .face {
+    filter: hue-rotate(200deg) saturate(2) brightness(1.2) !important;
 }
