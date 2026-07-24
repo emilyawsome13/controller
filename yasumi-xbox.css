@@ -1,9 +1,3 @@
-/* For recoloring the built-in Xbox One skin via editcss */
 .edit {
     filter: hue-rotate(300deg) !important;
-}
-
-/* Or target specific elements */
-.edit .xbox-characters {
-    /* face buttons */
 }
