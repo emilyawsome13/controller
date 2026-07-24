@@ -1,48 +1,40 @@
-/* Yasumi Pink GamePad Viewer Skin */
+/* Yasumi Xbox One Pink Theme */
 
-.controller.custom {
-    filter: drop-shadow(0 0 15px #ff4fd8);
+.controller.xbox {
+    filter: drop-shadow(0 0 15px #ff69d9);
 }
 
-/* Controller body */
-.controller.custom .face {
-    background: linear-gradient(135deg, #ffb6e6, #ff4fc3) !important;
-    border-color: #ff8ddd !important;
+/* Main Xbox controller shell */
+.controller.xbox .trigger,
+.controller.xbox .bumper,
+.controller.xbox .button,
+.controller.xbox .face,
+.controller.xbox .stick,
+.controller.xbox .dpad {
+    background-color: #ff69d9 !important;
 }
 
 /* Buttons */
-.controller.custom .button {
-    background: #ff66cc !important;
-    border-color: #ffd1f2 !important;
-    box-shadow: 0 0 8px #ff66cc;
+.controller.xbox .button {
+    border-color: #ffd6f5 !important;
+    box-shadow: 0 0 8px #ff69d9;
 }
 
-.controller.custom .button.pressed {
-    background: #ffffff !important;
-    box-shadow: 0 0 15px #ffffff;
+.controller.xbox .button.pressed {
+    background-color: white !important;
 }
 
 /* Analog sticks */
-.controller.custom .stick {
-    background: #ff8ddd !important;
-    border-color: #ffd6f3 !important;
-}
-
-.controller.custom .stick.pressed {
-    background: #ffffff !important;
+.controller.xbox .stick {
+    background-color: #ff9de6 !important;
 }
 
 /* D-pad */
-.controller.custom .dpad {
-    background: #ff66cc !important;
+.controller.xbox .dpad {
+    background-color: #ff4fcf !important;
 }
 
-/* Triggers */
-.controller.custom .trigger {
-    background: #ff99dd !important;
-}
-
-/* Text */
-.controller.custom {
-    color: #ffffff !important;
+/* Glow */
+.controller.xbox {
+    color: white !important;
 }
