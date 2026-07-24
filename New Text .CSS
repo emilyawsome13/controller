@@ -1,5 +1,39 @@
+/* Yasumi Xbox One Pink Theme - Edit CSS */
+
+.controller .face {
+    background: #ff69d9 !important;
+    box-shadow: 0 0 10px #ff69d9 !important;
+}
+
+.controller .button {
+    background: #ff8de3 !important;
+    border-color: #ffd6f5 !important;
+}
+
+.controller .button.pressed {
+    background: #ffffff !important;
+}
+
+.controller .stick {
+    background: #ffb3ea !important;
+}
+
+.controller .stick.pressed {
+    background: #ffffff !important;
+}
+
+.controller .dpad {
+    background: #ff69d9 !important;
+}
+
+.controller .trigger {
+    background: #ff9de6 !important;
+}
+
+.controller .bumper {
+    background: #ff69d9 !important;
+}
+
 .controller {
-    opacity: 1 !important;
-    display: block !important;
-    visibility: visible !important;
+    filter: drop-shadow(0 0 12px #ff69d9) !important;
 }
