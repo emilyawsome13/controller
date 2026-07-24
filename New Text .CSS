@@ -1,39 +1,43 @@
-/* Yasumi Xbox One Pink Theme - Edit CSS */
+/* Yasumi Xbox One Pink Skin */
 
-.controller .face {
-    background: #ff69d9 !important;
-    box-shadow: 0 0 10px #ff69d9 !important;
+.controller.xbox {
+    filter: drop-shadow(0 0 15px #ff4fd8);
 }
 
-.controller .button {
-    background: #ff8de3 !important;
-    border-color: #ffd6f5 !important;
+/* Main shell */
+.controller.xbox .triggers,
+.controller.xbox .bumpers,
+.controller.xbox .sticks,
+.controller.xbox .arrows,
+.controller.xbox .abxy,
+.controller.xbox .meta {
+    filter: hue-rotate(300deg) saturate(2);
 }
 
-.controller .button.pressed {
-    background: #ffffff !important;
+/* Pink glow */
+.controller.xbox {
+    box-shadow: 0 0 25px #ff69d9;
 }
 
-.controller .stick {
-    background: #ffb3ea !important;
-}
-
-.controller .stick.pressed {
-    background: #ffffff !important;
-}
-
-.controller .dpad {
-    background: #ff69d9 !important;
-}
-
-.controller .trigger {
-    background: #ff9de6 !important;
-}
-
-.controller .bumper {
+/* Buttons */
+.controller.xbox .a,
+.controller.xbox .b,
+.controller.xbox .x,
+.controller.xbox .y {
     background: #ff69d9 !important;
 }
 
-.controller {
-    filter: drop-shadow(0 0 12px #ff69d9) !important;
+/* D-pad */
+.controller.xbox .dpad {
+    background: #ff69d9 !important;
+}
+
+/* Analog sticks */
+.controller.xbox .stick {
+    background: #ffb6e6 !important;
+}
+
+/* Pressed buttons */
+.controller.xbox .pressed {
+    background: white !important;
 }
