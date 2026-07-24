@@ -1,43 +1,50 @@
-/* Yasumi Xbox One Pink Skin */
+/* GamePad Viewer Beta - Xbox One Safe Pink Neon Skin */
 
-.controller.xbox {
-    filter: drop-shadow(0 0 15px #ff4fd8);
+/* Controller body */
+svg {
+    filter: drop-shadow(0 0 12px rgba(255, 80, 180, 0.45));
 }
 
-/* Main shell */
-.controller.xbox .triggers,
-.controller.xbox .bumpers,
-.controller.xbox .sticks,
-.controller.xbox .arrows,
-.controller.xbox .abxy,
-.controller.xbox .meta {
-    filter: hue-rotate(300deg) saturate(2);
+/* Main controller paths */
+svg path,
+svg rect,
+svg circle {
+    transition: all 0.2s ease;
 }
 
-/* Pink glow */
-.controller.xbox {
-    box-shadow: 0 0 25px #ff69d9;
+/* Dark shell */
+svg path[fill="#fff"],
+svg path[fill="#ffffff"],
+svg path[fill="white"] {
+    fill: #17131d !important;
+}
+
+/* Pink highlights */
+svg circle,
+svg rect {
+    stroke: #ff4fa3 !important;
+}
+
+/* Thumbsticks */
+svg circle {
+    fill: #ff4fa3 !important;
 }
 
 /* Buttons */
-.controller.xbox .a,
-.controller.xbox .b,
-.controller.xbox .x,
-.controller.xbox .y {
-    background: #ff69d9 !important;
+svg text {
+    fill: #ffffff !important;
+    font-weight: bold;
 }
 
-/* D-pad */
-.controller.xbox .dpad {
-    background: #ff69d9 !important;
+/* Xbox logo glow */
+svg path {
+    filter: drop-shadow(0 0 3px rgba(255,79,163,.8));
 }
 
-/* Analog sticks */
-.controller.xbox .stick {
-    background: #ffb6e6 !important;
-}
-
-/* Pressed buttons */
-.controller.xbox .pressed {
-    background: white !important;
+/* Keep controller visible */
+body,
+iframe,
+svg {
+    opacity: 1 !important;
+    visibility: visible !important;
 }
